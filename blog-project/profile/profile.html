@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> blog project</title>
+    <!-- \ CSS -->
+    <link href="../css/sidenav.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mainStyle.css" rel="stylesheet">
+
+</head>
+
+<body id="main" onmouseover="_btn()">
+
+    <!--
+<div id="overlay" >
+    <center>
+        <div id="container" class="container">
+          <div id="form-container" >
+        <center>
+          <h id="rh"> before become an offical member plase fill out the nesscery form below </h>
+          <div id="inner-form-container">
+            <div id="inner-form">
+              <form>
+                <div> 
+                  <input id="firstNameInput" placeholder="Firstname">
+                  <input id="lastNameInput" placeholder="Lastname">
+                </div>
+                <div> 
+                  <input id="usernameInput" placeholder="Username">
+                </div>
+                <div> 
+                <div>
+                    <h id="bDayLeft">Birthday</h>
+                  </div>
+                  <input id="bDayInput" type="date" name="bday">
+                </div>
+
+              </form>
+            </div>
+            
+    
+              
+            <div id="form-container-b">
+              <div class="center">
+                <button id="enterBtn" onclick="_enterBtnClick()" class="btn" > Submit</button>
+                  <button id="Btn" onclick="_checkData()" class="btn" > mit</button>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+        </div>
+    </center>
+    </div>
+-->
+
+    <!-- Navigation -->
+
+
+    <header class="header">
+        <!-- Main Navbar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Navbar Brand -->
+                <div class="navbar-header d-flex align-items-center justify-content-between">
+                    <!-- Navbar Brand --><a href="index.html" class="navbar-brand"></a>
+                    <!-- Toggle Button-->
+                    <span id="_navt" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                </div>
+                <!-- Navbar Menu -->
+                <div id="navbarcollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <header class="header">
+        <!-- Main Navbar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="search-area">
+                <div class="search-area-inner d-flex align-items-center justify-content-center">
+                    <div class="close-btn"><i class="icon-close"></i></div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Navbar Brand -->
+
+
+                <div id="info-con">
+                    <div id="profile-info-div">
+                        <div>
+                            <h id="username"></h>
+                        </div>
+                        <div>
+                            <h id="email"></h>
+                        </div>
+                        <div>
+                            <h id="ma"><a href="#">Manage account</a></h>
+                        </div>
+                    </div>
+
+                    <label>
+                 <div id="profilePic" onclick="_btn()">
+                     </div>
+                    </label>
+
+                    <label id="uploadBtn">  
+<!--                       <h>upload photo</h>-->
+                       
+<!--                                     <input id="picUpload" type="file">-->
+<!--                       <button id="load" onclick="ppUpload()">upload</button>-->
+                    </label>
+                </div>
+
+
+                <!-- Navbar Menu -->
+                <div>
+                    <ul class="navbar-nav ml-auto">
+                        <h id="upload">Upload</h>
+                        <h onclick="closeUploadDiv()" id="closeLoad">X</h>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--    <div id="overlay" >-->
+
+    <div id="banner" class="banner">
+        <center>
+            <div id="upload-form">
+
+
+                <textarea cols="50" rows="3" id="up-input" placeholder="express yourself...">
+            
+            </textarea>
+                <h id="enter"><img src="../pictures/icons/enter.png"></h>
+            </div>
+
+        </center>
+
+    </div>
+
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="container" id="profile-side-con">
+            <center>
+                <div>
+
+                    <p id="pConUser"></p>
+                    <div>
+                        <div id="uDiv">
+                            <p id="totalLikes">Total posts</p>
+                            <p id="num1">ds</p>
+                        </div>
+                        <!--
+                    <div id="uDiv2">
+                <p id="totalFirends">Total firends</p>
+                    <p id="num2"> ds</p>
+                       </div>
+-->
+                    </div>
+                </div>
+            </center>
+        </div>
+        <a herf="#">Bookmarked</a>
+        <a href="#">Settings</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a onclick="logoutUser()"> Logout</a>
+
+
+
+    </div>
+
+
+
+    <div id="feedContainer" class="container">
+
+        <div id="innerF-container" class="container">
+
+
+            <!--
+            <div id="conC" class="container">
+                <div id="infoC">
+                    <div>
+                        <h id="User"></h>
+                    </div>
+                    
+                    <div>
+                        <h id="email"></h>
+                    </div>
+                    <div>
+                        <h id="ma"><a href="#">Manage account</a></h>
+                    </div>
+
+                </div>
+
+                <div id="post-text-con" class="container">
+                    
+                    <div id="post-t" class="container">
+                        <p>what he wanted come to him thesame wealth he use  jjhhg jk,gk,kgu ,k,uku, hjjkhjkhhkjk gjkguuy hgtjtukutrkuilri7l i,uu,u uuilul to dream of manifested and brough millions in dollars and gold in such a short time Kelley Nji life  csvdfsvfs sfdsdfs sdffsadsd sddddddddddddddddddddddd fd  jhis is fhsd sjk fhd sdhf si fdi fsd fdsif df idsf dsi ifsdijfsfdisfsdi fi fndis nfdsn nd fnd fikd sfidsh hfshdif iv hf bvih fdihbndn gv ndnb n bdnbn nb ngb gk bdbghhgb bbbbbbbbbbhdj fh dj bffhdh bdfhb df bfb dhb jhdf df hbfd bfhjb fbd hb fhdb dfjbh fjdb dfjb hjdffb </p>
+                    </div>         
+                    <div id="post-info">         
+                    </div>       
+                </div>
+            </div>
+-->
+
+        </div>
+    </div>
+    <!--    </div>-->
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="../js/fire/fireHandler.js"></script>
+    <script src="../js/fire/IntFire.js"></script>
+    <script src="../js/fire/profile.js"></script>
+    <script src="../js/fire/userInfo.js"></script>
+    <script src="../js/fire/upHandler.js"></script>
+    <script src="../js/fire/photoUpload.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/display.js"></script>
+    <script src="../js/fire/fireRender.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "2px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        window.addEventListener("resize", _feedResize);
+
+        function _feedResize() {
+
+            var userWindowW = $(window).width();
+            var userWindowH = $(window).height();
+            console.log(userWindowW);
+            var feedC = document.getElementById("feedContainer");
+            var contentC = document.getElementById("conC");
+            var infoC = document.getElementById("infoC")
+
+            if (userWindowH >= 700) {
+
+                feedC.style.height = "600px";
+
+            } else if (userWindowH <= 600) {
+                feedC.style.height = "500px";
+                document.getElementById("bDayInput");
+                contentC.style.width = '90%';
+
+                $("#enter").css({
+                    position: 'relative'
+                });
+
+            } else if (userWindowW < 850) {
+
+                contentC.style.width = '83%';
+            } else if (userWindowW < 1250) {
+
+                contentC.style.width = '80%';
+            } else if (userWindowW < 990) {
+
+                infoC.style.marginLeft = '-12%';
+
+            } else {
+                contentC.style.width = '67%';
+                infoC.style.marginLeft = '-3.2%';
+            }
+        }
+        $(window).ready(function() {
+            $("#up-input").val("");
+
+        });
+
+
+
+        //        function ggg() {
+        //
+        //            //        var newDiv = document.createElement('div');
+        //            //        newDiv.className = "newestOfall";
+        //            //                document.body.appendChild
+        //            //            var c = document.createDocumentFragment();
+        //            var feedC = document.getElementById("feedContainer");
+        //            var inF= document.getElementById("innerF-container");
+        //            
+        //            var conCDiv = document.createElement("div");
+        //            conCDiv.className = "container";
+        //            conCDiv.id = "conC";
+        //            
+        //            //CE for user info div
+        //            var infoCDiv = document.createElement("div");
+        //            infoCDiv.id = "infoC";
+        //            conCDiv.appendChild(infoCDiv);
+        //            var userDiv = document.createElement("div");
+        //            infoCDiv.appendChild(userDiv);
+        //            
+        //            var infoH = document.createElement("h");
+        //            infoH.id = "userN";
+        //            userDiv.appendChild(infoH);
+        //            
+        //            //CE for user content
+        //            var postTextCon = document.createElement("div");
+        //            postTextCon.id = "post-text-con";
+        //            postTextCon.className = "container";
+        //            conCDiv.appendChild(postTextCon);
+        //            
+        //            var postT = document.createElement("div")
+        //            postT.id = "post-t";
+        //            postT.className ="container";
+        //            
+        //            var innerP = document.createElement("p");
+        //            innerP.id = "inner-p";
+        //            postT.appendChild(innerP);
+        //            
+        //            var postInfo = document.createElement("div")
+        //            postInfo.id = "post-info";
+        //            
+        //            postTextCon.appendChild(postT);
+        //
+        //            inF.appendChild(conCDiv);
+        //
+        //            //            document.body.appendChild(c);
+        //        }
+        
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+body {
+    width: 100%;
+    background-color: #f4f7ff;
+
+}
+
+@media (min-width: 992px) {}
+
+.header {
+    border-bottom-color: black;
+    border-bottom-width: px;
+    padding-top: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+}
+
+#discover h {
+    color: aqua;
+    margin-left: 40;
+    padding-bottom: 10;
+    margin-bottom: 40;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!*/
+
+/*registration styling*/
+
+/*!!!!!!!!!!!!!!!!!!*/
+
+#form-container {
+    width: 100%;
+    height: 570px;
+    background-color: #f7f2f2;
+    padding-top: 200px;
+}
+
+#inner-form-container {
+    width: 100%;
+    height: 500px;
+
+}
+
+#inner-form {
+    padding-top: 90px;
+    background-color: #f7f2f2;
+    width: 80%;
+    height: 300px;
+
+}
+
+#form-container-b {
+    width: 80%;
+    height: 50px;
+
+}
+
+#inner-form input {
+    margin-bottom: 3%;
+}
+
+#inner-form input:focus {
+    border-color: transparent;
+}
+
+#inner-form form input {
+    border-color: transparent;
+    text-align: center;
+    border-bottom: 3px solid black;
+    background-color: #f7f2f2;
+}
+
+#usernameInput,
+#bDayInput {
+    width: 55%;
+}
+
+
+#inner-form form img {
+    margin-right: 2px;
+}
+
+passwordErrorMessage {
+    color: transparent;
+}
+
+/*
+._modOverlay {
+     position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: black;
+    opacity:0.8;
+    z-index:1001;
+}
+*/
+
+.banner {
+    background-color: white;
+}
+
+#banner {
+    padding-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 5px;
+    border-color: cornflowerblue;
+    border-bottom-color: black;
+    border-bottom-width: 10px;
+}
+
+
+#banner h {
+    margin-top: 15px;
+    padding-top: 40px;
+}
+
+#upload-form {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#upload-form #up-input {
+    border-color: transparent;
+    border-bottom: 3px solid black;
+    /*    width: 35%;*/
+    max-height: 100px;
+    background-color: #fcfcfc;
+
+}
+
+#upload-form textarea {
+    resize: none;
+    margin-top: -20px;
+
+
+}
+
+#enter {
+    margin-left: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#feedContainer {
+
+    flex: 1;
+    width: 99%;
+    height: 600px;
+    background-color: #f4f7ff;
+}
+
+#inner-feed {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*    background-color: black;*/
+    z-index: 5;
+
+
+    /*    opacity: .5;*/
+}
+
+#overlay #container {
+    z-index: 5;
+    margin-top: 5%;
+    width: 70%;
+    height: 520px;
+    background-color: #f7f2f2;
+
+
+}
+
+#bDayLeft {
+    margin-right: 240px;
+    font-size: 10px;
+}
+
+#innerF-container {
+    border-top-width: 1px;
+    border-top-color: black;
+    padding-top: 0.1%;
+    width: 70%;
+    height: 100%;
+    background-color: #f4f7ff;
+}
+
+/*profile */
+
+/*
+#profilePic {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+*/
+
+#profile-info-div {
+    padding-right: 10px;
+    position: absolute;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+#info-con {
+    margin-left: 12px;
+    margin-top: -5%;
+}
+
+#email {
+
+    font-size: 13px;
+    color: dimgray;
+}
+
+#ma {
+    font-size: 15px;
+    color: blue;
+}
+
+#profile-info-div div {
+    margin-top: -7px;
+    margin-bottom: -5px;
+}
+
+#feedHeader {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+#mainFeedContainer {
+    padding-top: 50px;
+    position: absolute;
+    width: 1500px;
+    height: 600px;
+    background-color: ;
+}
+
+#innerFeedCon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#feed {
+    width: 50%;
+    height: 150px;
+    background-color: aqua;
+    margin-top: 50px;
+}
+
+#picUpload {
+    margin-left: 11px;
+}
+
+/*
+input#picUpload {
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+    z-index: -1;
+}
+*/
+
+#uploader {
+    background-color: black;
+    width: 100%;
+    margin-top: -5;
+}
+
+/*
+#uploadBtn > input[type="file"] {
+    opacity: 0;
+}
+#uploadBtn {
+    cursor: pointer;
+    width: 65px;
+    height: 30px;
+    margin-bottom: -4%;
+}
+#uploadBtn h {
+    font-size: 10px;
+    margin-left: 4px;
+    color: skyblue;
+    padding-bottom: 20px;
+
+}
+*/
+
+#info-con label {}
+
+#load {}
+
+#upload,
+#closeLoad {
+    margin-right: 70px;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+#upload:hover,
+#closeLoad:hover {
+
+    opacity: 0.6;
+}
+
+#ggg {
+    cursor: pointer;
+}
+
+#conC {
+    margin-top: 40px;
+    width: 85%;
+    height: 25%;
+    background-color: #f4f7ff;
+    white-space: normal;
+}
+
+#infoC {
+    margin-left: -3.2%;
+    float: left;
+    width: 30%;
+    height: 50%;
+    background-color: white;
+}
+
+#post-text-con {
+    float: right;
+    height: auto;
+    width: 71%;
+    background-color: #f4f7ff;
+    white-space: normal;
+}
+
+#post-t {
+
+    background-color: darkmagenta;
+    overflow: hidden;
+    font-size: 2vw;
+    width: 127%;
+    height: auto;
+}
+
+#post-t p {}
+
+#post-info {
+
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+
+#userP {
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+#inner-p {
+    color: ;
+}
+
+#profile-side-con {
+    margin-top: 8%;
+    width: 100%;
+    height: 40%;
+
+}
+
+#profile-side-con #pConUser {
+    font-size: 120%;
+}
+
+#totalLikes {
+    color: #e3e4e5;
+    font-size: 80%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 4%;
+}
+
+#totalFirends {
+    color: #e3e4e5;
+    font-size: 80%;
+    margin-left: 5%;
+}
+
+#num1 {
+    color: fuchsia;
+    font-size: 70%;
+    float: left;
+}
+
+#num2 {
+    margin-top: -32%;
+    font-size: 70%;
+    float: right;
+    color: fuchsia;
+    margin-right: 2%;
+}
+
+#uDiv {
+    width: 50%;
+    background-color: black;
+    float: left;
+}
+
+#uDiv2 {
+    float: right;
+    width: 50%;
+    background-color: black;
+}
+
+#conImg {
+    float: right;
+    width: 15%;
+    height: 15%;
+/*    background-color: aqua;*/
+    margin-bottom: 1%;
+    
+}
+#comImg {
+    float: right;
+    width: 100%;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 1000px) {
+    #usernameInput,
+    #bDayInput {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #userP {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 750) {
+    #userP {
+        font-size: 1vw;
+    }
+}
